@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login_app',
+    'login_app', 
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Tela_de_Login.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,13 +77,17 @@ WSGI_APPLICATION = 'Tela_de_Login.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Cadastro_Teste',
-        'USER': 'Cadastro',
-        'PASSWORD':'Wsf987hu',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'NAME': 'Cadastro_Teste',  
+        'USER': 'Cadastro',  
+        'PASSWORD': 'Wsf987hu',  
+        'HOST': 'localhost',  
+        'PORT': '3306',  
+        'OPTIONS': {
+            'init_command': "SET default_storage_engine=INNODB",
+        }
     }
 }
+
 
 
 # Password validation
