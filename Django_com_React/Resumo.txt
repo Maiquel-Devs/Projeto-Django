@@ -1,0 +1,3 @@
+1 - Pegar os Dados no Backend Django e transformar em Json
+2 - Jogar no React 
+3 - Os templates são feitos usando Java Script.
