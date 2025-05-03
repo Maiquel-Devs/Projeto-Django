@@ -1,2 +1,0 @@
-Criar uma nova Página , e colocar aquela mensagem de bem vindo na pagina nova
-Criar uma tabela e talvez colocar algumas informações 
